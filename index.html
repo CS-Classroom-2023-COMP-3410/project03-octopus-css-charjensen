@@ -6,20 +6,21 @@
     <title>The Fascinating World of Octopuses</title>
   </head>
 
-  <body style="background-color: rgb(199, 236, 244)">
+  <body style="background-color: rgb(199, 236, 244)"><!--Changes color background-->
     <!-- Header Section -->
     <div id="header">
-      <h1 style="text-align: center; font-weight: bold">
+      <h1 style="text-align: center; font-weight: bold"> <!--Makes text centers and bold.-->
         The Fascinating World of Octopuses
       </h1>
-      <p
+      <!--Changes font and italics.-->
+      <p 
         style="
           font-style: italic;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         "
       >
         Welcome to this intriguing corner of the internet!
-      </p>
+      </p> 
     </div>
 
     <!-- Main Content -->
@@ -70,23 +71,28 @@
       <!-- Fun Experiment: Octopus Quiz -->
       <div id="quiz-section">
         <!-- Image -->
+
+        <!--Adjusts the image position and gives it a purple border.-->
         <img
           class="purple-border"
           src="octopus-image.png"
           alt="Image of an octopus"
           width="100"
-          style="position: relative; top: 65px; left: 65px;"
+          style="position: relative; top: 65px; left: 65px;" 
         />
 
+        <!--Changes header's position and font size.-->
         <h2 style="position: relative; top: -150px; font-size: 26px">
           Octopus Quiz
         </h2>
 
         <form action="/submit-quiz" method="POST">
           <!-- Question 1 -->
+           <!--Moves question to the right side.-->
           <label for="question1" style="position: relative; top: -230px"
             >How many hearts does an octopus have?</label
           >
+          <!--Moves input box to right side.-->
           <input
             type="text"
             id="question1"
@@ -94,10 +100,11 @@
             style="position: relative; top: -230px"
           /><br />
 
-          <!-- Question 2 -->
+          <!--Moves second question to right side.-->
           <label for="question2" style="position: relative; top: -240px"
             >Can octopuses change color? (Yes/No)</label
           >
+          <!--Moves input box to right side.-->
           <input
             type="text"
             id="question2"
@@ -105,6 +112,7 @@
             style="position: relative; top: -240px"
           /><br />
 
+          <!--Makes submit box appear on the right side.-->
           <input
             type="submit"
             value="Submit Quiz"
@@ -120,6 +128,7 @@
       <h2 class="short-underline">Common Octopus Species</h2>
       <table border="1">
         <tr class="table-header-color">
+          <!--Changes all the padding for the headers (For some reason putting this in the tr tag did not work?).-->
           <th style="padding: 1%">Species</th>
           <th style="padding: 1%">Location</th>
           <th style="padding: 1%">Size</th>
@@ -129,6 +138,7 @@
           <td>Worldwide</td>
           <td>12-36 inches</td>
         </tr>
+        <!--Gives the background of the last row a white color/-->
         <tr style="background-color: white">
           <td>Giant Pacific Octopus</td>
           <td>North Pacific</td>

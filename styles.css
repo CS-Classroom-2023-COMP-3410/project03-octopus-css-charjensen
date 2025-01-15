@@ -1,199 +1,164 @@
 #header {
-    background: linear-gradient(
-      to right,
-      rgb(0, 110, 153),
-      rgb(0, 174, 211)
-    ); /* Gradient from dark blue to light blue */
-    border-radius: 15px; /* Makes the corners rounded */
-    padding: 20px; /* Adds some spacing inside the header */
-    color: white; /* Text color for better contrast */
-    font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(
+    to right,
+    rgb(0, 110, 153),
+    rgb(0, 174, 211)
+  ); /* Creates a horizontal gradient background transitioning from dark to light blue */
+  border-radius: 15px; /* Rounds the corners of the header */
+  padding: 20px; /* Adds internal spacing within the header */
+  color: white; /* Sets the text color to white for contrast */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Specifies serif fonts for the text */
+}
+
+#main-content {
+  background: white; /* Sets the background color to white */
+  border-radius: 15px; /* Rounds the corners */
+  margin-top: 3%; /* Adds space above the element */
+  padding: 20px; /* Adds internal spacing */
+  color: white; /* Sets text color to white, but it may be overridden inside */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Specifies serif fonts for content text */
+
+  h2 {
+      color: rgb(0, 105, 148); /* Sets the color of h2 headers */
+      font-size: 36px; /* Defines font size for h2 headers */
+      font-family: Georgia, "Times New Roman", Times, serif; /* Applies a serif font */
+      font-weight: bold; /* Makes the text bold */
+      text-transform: uppercase; /* Converts text to uppercase */
+  }
+  /* Repeated similar styles for h3 to h6 with varying sizes */
+
+  a {
+      color: rgb(12, 112, 153); /* Defines hyperlink color */
+      text-decoration: none; /* Removes underlines from links */
   }
 
-  #main-content {
-    background: white; /* Gradient from dark blue to light blue */
-    border-radius: 15px; /* Makes the corners rounded */
-    margin-top: 3%;
-    padding: 20px; /* Adds some spacing inside the header */
-    color: white; /* Text color for better contrast */
-    font-family: Georgia, "Times New Roman", Times, serif;
-
-    h2 {
-      color: rgb(0, 105, 148);
-      font-size: 36px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    h3 {
-      color: rgb(0, 105, 148);
-      font-size: 24px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    h4 {
-      color: rgb(0, 105, 148);
-      font-size: 20px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: bold;
-    }
-
-    h5 {
-      color: rgb(0, 105, 148);
-      font-size: 16px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: bold;
-    }
-
-    h6 {
-      color: rgb(0, 105, 148);
-      font-size: 14px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: bold;
-    }
-
-    a {
-      color: rgb(12, 112, 153); /* Set the default color for hyperlinks */
-      text-decoration: none; /* Remove the underline (optional) */
-    }
-
-    li {
-      color: rgb(29, 30, 111);
-      padding: 1%;
-      font-size: 18px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-    }
-
-    p {
-      color: rgb(29, 30, 111);
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .important {
-      color: rgb(11, 114, 155);
-      background-color: cyan; /* Cyan background color */
-      border-radius: 10px; /* Rounded corners */
-      padding: 2px 5px; /* Add padding around the text */
-      display: inline-block; /* Ensures the box fits around the text */
-    }
+  li {
+      color: rgb(29, 30, 111); /* Sets list item text color */
+      padding: 1%; /* Adds spacing around list items */
+      font-size: 18px; /* Defines font size */
+      font-family: Arial, Helvetica, sans-serif; /* Specifies sans-serif fonts */
+      font-weight: bold; /* Makes text bold */
   }
 
-  .short-underline {
-    position: relative;
-    display: inline-block;
+  p {
+      color: rgb(29, 30, 111); /* Sets paragraph text color */
+      font-family: Arial, Helvetica, sans-serif; /* Uses sans-serif fonts */
+      font-weight: bold; /* Makes text bold */
+      font-size: 20px; /* Sets font size for paragraphs */
   }
 
-  .short-underline::after {
-    content: "";
-    position: absolute;
-    width: 20%; /* Underline only part of the text */
-    height: 4px; /* Thickness of the underline */
-    background: rgb(144, 224, 239); /* Underline color */
-    left: 0%; /* Center the underline */
-    bottom: -20px; /* Space below the text */
+  .important {
+      color: rgb(11, 114, 155); /* Sets text color */
+      background-color: cyan; /* Highlights with cyan background */
+      border-radius: 10px; /* Rounds the corners of the highlight box */
+      padding: 2px 5px; /* Adds internal spacing */
+      display: inline-block; /* Ensures highlight wraps tightly around text */
+  }
+}
+
+.short-underline {
+  position: relative; /* Positions it relative to its normal flow */
+  display: inline-block; /* Ensures it takes only as much space as its content */
+}
+
+.short-underline::after {
+  content: ""; /* Adds a pseudo-element after the text */
+  position: absolute; /* Allows positioning relative to .short-underline */
+  width: 20%; /* Sets the width of the underline */
+  height: 4px; /* Defines the thickness of the underline */
+  background: rgb(144, 224, 239); /* Underline color */
+  left: 0%; /* Aligns the underline with the text */
+  bottom: -20px; /* Positions the underline below the text */
+}
+
+#quiz-section {
+  background: rgb(144, 224, 239); /* Sets a light blue background */
+  border-radius: 15px; /* Rounds the corners */
+  margin-top: 3%; /* Adds space above the section */
+  padding: 80px; /* Adds internal spacing */
+  color: rgb(29, 30, 111); /* Sets text color */
+  font-family: Arial, Helvetica, sans-serif; /* Specifies sans-serif fonts */
+  font-weight: bold; /* Makes text bold */
+  font-size: 20px; /* Sets font size */
+
+  .purple-border {
+      border: 4px solid blueviolet; /* Adds a thick purple border */
   }
 
-  #quiz-section {
-    background: rgb(
-      144,
-      224,
-      239
-    ); /* Gradient from dark blue to light blue */
-    border-radius: 15px; /* Makes the corners rounded */
-    margin-top: 3%;
-    padding: 80px; /* Adds some spacing inside the header */
-    color: rgb(29, 30, 111);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-
-    .purple-border {
-      border: 4px solid blueviolet; /* 5px thick solid purple border */
-    }
-
-    form {
-      float: right; /* Align the form to the right */
-      width: 30%; /* Set a fixed width for the form */
-    }
-
-    /* Ensure labels and inputs stack vertically */
-    form label {
-      display: block; /* Each label and input gets its own line */
-      width: 100%; /* Inputs take the full width of the form */
-      margin-bottom: 10px; /* Add spacing between elements */
-
-    }
-    form input[type="text"] {
-      display: block; /* Each label and input gets its own line */
-      width: 100%; /* Inputs take the full width of the form */
-      margin-bottom: 10px; /* Add spacing between elements */
-      box-sizing: border-box; /* Ensure padding is included in the width calculation */
-      border: 3px solid rgb(27, 120, 163); /* Set a 2px solid blue border */
-      border-radius: 6px;
-      font-size: 36px;
-    }
-
-    /* Style for the submit button */
-    form input[type="submit"] {
-      display: block; /* Place the button below inputs */
-      margin-top: 16px; /* Add space above the button */
-      padding: 16px; /* Add padding to make it larger */
-      background-color: rgb(27, 120, 163); /* Add background color */
-      color: white; /* White text */
-      border: none; /* Remove default border */
-      border-radius: 5px; /* Rounded corners */
-      cursor: pointer; /* Change cursor to pointer */
-      font-size: 24px;
-    }
+  form {
+      float: right; /* Aligns the form to the right */
+      width: 30%; /* Sets the form's width */
   }
 
-  #species-table h2 {
-    color: rgb(0, 105, 148);
-    font-size: 30px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: bold;
-  }
-  
-  #species-table table {
-    width: 100%;
-    border-collapse: collapse; /* Ensure borders are not doubled */
-    border: 1px solid black;
-  }
-  
-  #species-table .table-header-color {
-    border: 2px solid black;
-    padding: 10px;
-    background-color: grey;
-    color: white;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+  form label {
+      display: block; /* Places labels on separate lines */
+      width: 100%; /* Makes labels take full width */
+      margin-bottom: 10px; /* Adds spacing below labels */
   }
 
-
-  #species-table td {
-    border: 2px solid black;
-    color: rgb(29, 30, 111);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 1%;
+  form input[type="text"] {
+      display: block; /* Places inputs on separate lines */
+      width: 100%; /* Makes inputs take full width */
+      margin-bottom: 10px; /* Adds spacing below inputs */
+      box-sizing: border-box; /* Includes padding in width calculation */
+      border: 3px solid rgb(27, 120, 163); /* Adds a blue border */
+      border-radius: 6px; /* Rounds the corners */
+      font-size: 36px; /* Sets font size for text inputs */
   }
 
-  #footer {
-    background: rgb(0, 105, 148);
-    border-radius: 15px; /* Makes the corners rounded */
-    margin: 2%;
-    padding: 20px; /* Adds some spacing inside the header */
-    color: white; /* Text color for better contrast */
-    font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times,
-      serif;
-    text-align: center;
-    font-weight: bold;
+  form input[type="submit"] {
+      display: block; /* Places the button below inputs */
+      margin-top: 16px; /* Adds spacing above the button */
+      padding: 16px; /* Increases button size */
+      background-color: rgb(27, 120, 163); /* Sets button color */
+      color: white; /* White text on the button */
+      border: none; /* Removes default borders */
+      border-radius: 5px; /* Rounds button corners */
+      cursor: pointer; /* Shows pointer on hover */
+      font-size: 24px; /* Sets button text size */
   }
+}
+
+#species-table h2 {
+  color: rgb(0, 105, 148); /* Sets header color */
+  font-size: 30px; /* Defines font size for table headers */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Specifies serif fonts */
+  font-weight: bold; /* Makes headers bold */
+}
+
+#species-table table {
+  width: 100%; /* Makes the table span full width */
+  border-collapse: collapse; /* Avoids double borders */
+  border: 1px solid black; /* Adds a border around the table */
+}
+
+#species-table .table-header-color {
+  border: 2px solid black; /* Adds a bold border to headers */
+  padding: 10px; /* Adds internal spacing */
+  background-color: grey; /* Sets header background color */
+  color: white; /* Makes header text white */
+  text-align: left; /* Aligns text to the left */
+  font-family: Arial, Helvetica, sans-serif; /* Specifies sans-serif fonts */
+  font-size: 20px; /* Sets font size for headers */
+}
+
+#species-table td {
+  border: 2px solid black; /* Adds borders to cells */
+  color: rgb(29, 30, 111); /* Sets cell text color */
+  font-family: Arial, Helvetica, sans-serif; /* Uses sans-serif fonts */
+  font-weight: bold; /* Makes cell text bold */
+  font-size: 20px; /* Sets font size for cells */
+  padding: 1%; /* Adds spacing inside cells */
+}
+
+#footer {
+  background: rgb(0, 105, 148); /* Sets footer background color */
+  border-radius: 15px; /* Rounds footer corners */
+  margin: 2%; /* Adds space around the footer */
+  padding: 20px; /* Adds internal spacing */
+  color: white; /* Makes footer text white */
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times,
+    serif; /* Specifies a font stack */
+  text-align: center; /* Centers footer text */
+  font-weight: bold; /* Makes footer text bold */
+}
